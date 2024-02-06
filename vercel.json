@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "area_52_gdl/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "area_52_gdl/wsgi.py"
+      }
+    ]
+  }
